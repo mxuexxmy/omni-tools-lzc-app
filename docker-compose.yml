@@ -1,0 +1,5 @@
+services:
+  omni-tools: 
+    image: iib0011/omni-tools:latest 
+    ports:
+      - "8080:80"

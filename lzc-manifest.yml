@@ -1,0 +1,19 @@
+lzc-sdk-version: "0.1"
+name: Omni Tools
+package: xyz.mxue.omnitools
+version: 0.0.1
+description: 各种在线工具来简化日常任务。无论您是编码、处理图像还是处理数字，OmniTools 都能满足您的需求。
+homepage: https://github.com/iib0011/omni-tools
+author: " iib0011"
+application:
+  subdomain: omnitools
+  background_task: false
+  multi_instance: false
+  gpu_accel: false
+  kvm_accel: false
+  usb_accel: false
+  routes:
+    - /=http://omni-tools.xyz.mxue.omnitools.lzcapp:80/
+services:
+  omni-tools:
+    image: registry.lazycat.cloud/mxuexxmy/iib0011/omni-tools:645eb8dfcd8a81b8
